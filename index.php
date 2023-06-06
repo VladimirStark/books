@@ -17,10 +17,25 @@ require_once 'db.php';
         <div style="border: 2px solid red; padding: 15px">
             <h3><?php echo $row['title'] ?></h3>
             <p><?php echo $row['author'] ?></p>
+            <?php
+            if (!empty($row['year']))
+            {
+            ?>
             <p>Год издания:<?php echo $row['year'] ?></p>
+            <?php
+            }
+           
+            if (!empty($row['genre']))
+            {
+            ?>
+            <p>Жанр:<?php echo $row['genre'] ?></p>
+            <?php
+            }
+            ?>
         </div>
     <?php
     }
     ?>
+    <a href="add.php">Добавить новую книгу</a>
 </body>
 </html>
