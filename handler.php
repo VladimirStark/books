@@ -29,3 +29,4 @@ if ($result)
     <a href="index.php">Вернутся к списку книг</a>
     <?php
 }
+?> 

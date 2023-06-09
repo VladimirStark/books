@@ -32,6 +32,7 @@ require_once 'db.php';
             <?php
             }
             ?>
+            <a href="edit.php?id=<?php echo $row['id'] ?>">Редактировать</a>
         </div>
     <?php
     }
